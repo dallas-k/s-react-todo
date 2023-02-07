@@ -3,8 +3,8 @@ import { collection, doc, getDocs, addDoc, updateDoc, deleteDoc, query, orderBy 
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [todos, setList] = useState([]);
   const todoCollectionRef = collection(db, "todos");
+  const [todos, setList] = useState([]);
   const [newData, setNewData] = useState('');
   const [changed, setChanged] = useState(false);
 
